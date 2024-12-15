@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exhibitions - Visualize Art</title>
+    <link rel="stylesheet" href="exhibitions.css">
+</head>
+
+<body>
+
+
+    <header class="navbar">
+        <div class="logo">
+            <div class="circle"></div>
+            <span>Visualize Art</span>
+        </div>
+    
+        <!-- Hamburger menu (hidden by default) -->
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    
+        <div class="nav-and-search">
+            <nav class="nav-links">
+                <a href="home.html" class="active">Home</a>
+                <a href="home.html#about">About</a>
+                <a href="exhibitions.html">Exhibitions</a>
+                <a href="home.html#request">Request Service</a>
+            </nav>
+            <!-- <button id="logoutButton" class="logout-button">Logout</button> -->
+        </div>
+    </header>
+    
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('show');
+        }
+    </script>
+
+
+    <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="hero-placeholder"></div>
+        </div>
+        <div class="image-slider">
+            <div class="image-slide" style="background-image: url('images/Exhibition.png');"></div>
+            <div class="image-slide" style="background-image: url('images/Exhibition2.png');"></div>
+            <div class="image-slide" style="background-image: url('images/Exhibition3.png');"></div>
+        </div>
+        <!-- Tombol prev dan next untuk menggeser gambar -->
+        <button class="prev-btn" onclick="moveSlides(-1)">&#10094;</button>
+        <button class="next-btn" onclick="moveSlides(1)">&#10095;</button>
+    </section>
+
+
+
+<section class="exhibition-gallery">
+    <h2>Exhibition Gallery</h2>
+    <div class="gallery-grid">
+        <div class="gallery-card">
+            <img src="images/galery1.png" alt="Art Exhibition" class="gallery-image"> <!-- Gambar ditambahkan disini -->
+            <div class="gallery-info">
+                <h3>Hide Behind Armor</h3>
+                
+                <span class="tag">Art</span>
+                <p class="artist">Naufal Abshar</p>
+            </div>
+        </div>
+        <div class="gallery-card">
+            <img src="images/galery2.png" alt="Photography Exhibition" class="gallery-image">
+            <!-- Gambar ditambahkan disini -->
+            <div class="gallery-info">
+                <h3>Photography Exhibition</h3>
+               
+                <span class="tag">Art</span>
+                <p class="artist">Naufal Abshar</p>
+            </div>
+        </div>
+        <div class="gallery-card">
+            <img src="images/galery3.png" alt="Art Exhibition" class="gallery-image"> <!-- Gambar ditambahkan disini -->
+            <div class="gallery-info">
+                <h3>Art Exhibition</h3>
+                
+                <span class="tag">Art</span>
+                <p class="artist">Naufal Abshar</p>
+            </div>
+        </div>
+        <div class="gallery-card">
+            <img src="images/galery4.png" alt="Photography Exhibition" class="gallery-image">
+            <!-- Gambar ditambahkan disini -->
+            <div class="gallery-info">
+                <h3>Photography Exhibition</h3>
+              
+                <span class="tag">Art</span>
+                <p class="artist">Naufal Abshar</p>
+            </div>
+        </div>
+    </div>
+    <div class="btn">
+        <a href="viewartist.html" class="view-artist-btn">View Artist</a>
+    </div>
+</section>
+
+
+        
+    
+        <!-- Upcoming Events Section -->
+<section class="upcoming-events">
+    <h2>Upcoming Events</h2>
+    <p>Don't miss out</p>
+    <div class="events-grid">
+        <div class="event-card">
+            <div class="event-image">
+                <img src="images/upcoming1.png" alt="Art Gallery Exhibition" class="event-img">
+                <!-- Gambar ditambahkan disini -->
+                <span class="event-badge">New</span>
+                <p>Artwork by John Doe</p>
+            </div>
+            <div class="event-info">
+                <h3>Art Gallery Exhibition</h3>
+                <p>10th May - 20th May</p>
+                <p class="event-type">Art Gallery Exhibition</p>
+            </div>
+        </div>
+        <div class="event-card">
+            <div class="event-image">
+                <img src="images/upcoming2.png" alt="Sculpture Showcase" class="event-img">
+                <!-- Gambar ditambahkan disini -->
+                <span class="event-badge">Limited</span>
+                <p>Sculpture by Jane Smith</p>
+            </div>
+            <div class="event-info">
+                <h3>Sculpture Showcase</h3>
+                <p>15th May - 25th May</p>
+                <p class="event-type">Sculpture Showcase</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <footer>
+        <p>Email: visualizeart@gmail.com</p>
+        <p>&copy; 2024 Visualize Art. All Rights Reserved.</p>
+        <a href="privacy.html">Privacy Policy</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

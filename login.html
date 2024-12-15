@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualize Art - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <div class="circle"></div>
+            <span>Visualize Art</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#" class="active">Login</a>
+            <a href="signup.html">Sign Up</a>
+        </nav>
+    </header>
+    <main class="login-container">
+        <div class="login-info">
+            <h1>Login</h1>
+            <p>Please enter your login details below</p>
+        </div>
+        <div class="login-form-container">
+            <form class="login-form">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter your username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <div class="form-actions">
+                    <button type="button" id="forgotPassword" class="outline-button">Forgot Password?</button>
+                    <button type="submit" class="primary-button">Login</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

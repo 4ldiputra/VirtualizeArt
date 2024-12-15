@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualize Art</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+<header class="navbar">
+    <div class="logo">
+        <div class="circle"></div>
+        <span>Visualize Art</span>
+    </div>
+
+    <!-- Hamburger menu (hidden by default) -->
+    <div class="hamburger-menu" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <div class="nav-and-search">
+        <nav class="nav-links">
+            <a href="home.html" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="#request">Request Service</a>
+        </nav>
+        <!-- <button id="logoutButton" class="logout-button">Logout</button> -->
+    </div>
+</header>
+
+<script>
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('show');
+    }
+</script>
+
+
+    <main>
+        <section class="hero">
+            <h2>Welcome to Visual Art Gallery!</h2>
+            <h3>Explore Your <span>Imagine.</span></h3>
+            <p>"Visualize Art is a virtual exhibition platform designed to showcase artwork in the form of digital
+                posters. Our aim is to broaden access to art for everyone through digital media."</p>
+            <button id="viewExhibitions">View All Exhibitions</button>
+        </section>
+       
+    <section class="intro">
+        <div class="intro-text">
+            <h1 id="about">About Us</h1>
+            <p id="visualize">
+                "Visualize Art" is an innovative platform that empowers artists and organizations to showcase their
+                creativity through
+                virtual exhibitions. By combining aesthetics with cutting-edge technology, we offer a seamless experience
+                for exploring
+                and creating immersive art galleries online. Whether you're an artist showcasing your talent or an
+                enthusiast exploring
+                vibrant works, Virtualize Art bridges the gap between creators and admirers. Our mission is to make art
+                accessible to
+                everyone, anywhere.
+            </p>
+        </div>
+        <div class="intro-image">
+            <img src="images/about.png" alt="Artwork">
+        </div>
+    </section>
+
+<section class="featured-posters">
+    <h2>Featured Posters</h2>
+    <p>Browse through our curated collection of artworks</p>
+    <div class="posters-container">
+        <div class="poster-card">
+            <div class="tag">Limited Edition</div>
+            <img src="images/poster1.png" alt="Retro Fusion Poster">
+            <div class="poster-info">
+                <p>Pleasure of Chaos</p>
+                <h3>Artist: Heri Dono</h3>
+            </div>
+        </div>
+        <div class="poster-card">
+            <div class="tag">New Arrival</div>
+            <img src="images/poster2.png" alt="Dreamscape Poster">
+            <div class="poster-info">
+                <p>The injured Diponegoro</p>
+                <h3>Artist: Hendra Gunawan</h3>
+            </div>
+        </div>
+        <div class="poster-card">
+            <div class="tag">Bestseller</div>
+            <img src="images/poster3.png" alt="Urban Elegance Poster">
+            <div class="poster-info">
+                <p>Discussion</p>
+                <h3>Artist: Alvian Anta Putra</h3>
+            </div>
+        </div>
+        <div class="poster-card">
+            <div class="tag">Trending</div>
+            <img src="images/poster4.png" alt="Modern Pop Poster">
+            <div class="poster-info">
+            <p>Cat</p>
+            <h3>Artist: Popo Iskandar</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+        <section class="gallery-highlights">
+            <h2>Art Gallery Highlights</h2>
+            <p>Discover the latest social media buzz around our posters</p>
+            <div class="highlight-card">
+                <div class="user-info">
+                    <!-- <div class="avatar"></div> -->
+                    <div>
+                        <h4>Raden Saleh</h4>
+                        <p>1857, Indonesia</p>
+                    </div>
+                    <button class="menu-button">...</button>
+                </div>
+                <div class="post-content">
+                    <img src="images/ArtGalery.png" alt="">
+                </div>
+                <div class="post-footer">
+                    <p>The arrest of prince diponegoro.</p>
+                    <div class="hashtags">
+                        <span>#ArtisticInspiration</span>
+                        <span>#VirtualizeArt</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+<div id="request" class="request-service-container">
+    <!-- Form Area -->
+    <div class="form-container">
+        <h1>Request Service</h1>
+        <p>Have a question or feedback? Contact us!</p>
+        <form id="art">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Type your message here"></textarea>
+
+            <button type="submit" class="submit-button">Send Message</button>
+            <div id="loadingSpinner" class="loading-spinner"></div>
+            <div id="loadingText" class="loading-text">Sending...</div>
+        </form>
+
+    </div>
+
+    <!-- Gambar Area -->
+    <div class="image-container"> <img src="images/requestservice.png" alt=""></div>
+</div>
+    </main>
+
+    <footer>
+        <p>Email: visualizeart@gmail.com</p>
+        <p>&copy; 2024 Visualize Art. All Rights Reserved.</p>
+        <a href="privacy.html">Privacy Policy</a>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // JavaScript to handle form submission via AJAX
+        document.getElementById("art").addEventListener("submit", function (e) {
+            e.preventDefault(); // Prevent the default form submission
+
+            var formData = new FormData(this); // Collect form data
+            var formAction = "https://script.google.com/macros/s/AKfycbywnNKTvrl-UgJFC10C94L5-UzwOXUzgNpWeDA-X6DkYpaVV1FIt0QhJ5xc05m7VNb08w/exec"; // Google Apps Script URL
+
+            // Show loading spinner and text
+            document.getElementById("loadingSpinner").style.display = "inline-block";
+            document.getElementById("loadingText").style.display = "inline-block";
+
+            fetch(formAction, {
+                method: "POST",
+                body: formData
+            })
+                .then(response => response.text()) // Wait for a response
+                .then(responseText => {
+                    console.log(responseText); // You can check if the response is successful or not
+                    alert("Your message has been sent!"); // Show a success message
+                    document.getElementById("art").reset(); // Reset form fields (clears the form)
+
+                    // Hide loading spinner and text after successful submission
+                    document.getElementById("loadingSpinner").style.display = "none";
+                    document.getElementById("loadingText").style.display = "none";
+                })
+                .catch(error => {
+                    console.error("Error submitting form:", error);
+                    alert("There was an error submitting your form. Please try again.");
+
+                    // Hide loading spinner and text if there is an error
+                    document.getElementById("loadingSpinner").style.display = "none";
+                    document.getElementById("loadingText").style.display = "none";
+                });
+        });
+    </script>
+</body>
+
+</html>

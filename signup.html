@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualize Art - Sign Up</title>
+    <link rel="stylesheet" href="singup.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <div class="circle"></div>
+            <span>Visualize Art</span>
+        </div>
+        <nav class="nav-links">
+            <a href="login.html">Login</a>
+            <a href="#" class="active">Sign Up</a>
+        </nav>
+    </header>
+    <main class="signup-container">
+        <div class="signup-header">
+            <h1>Create Your Account</h1>
+            <p>Enter your details below to sign up.</p>
+        </div>
+    <form id="signupForm" class="signup-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter your username" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <select id="country" required>
+                        <option value="" disabled selected>Select your country</option>
+                        <option value="usa">USA</option>
+                        <option value="uk">UK</option>
+                        <option value="canada">Canada</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+            <button type="submit" class="primary-button">Sign Up</button>
+            </div>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

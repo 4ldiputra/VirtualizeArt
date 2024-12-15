@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artist Showcase</title>
+    <link rel="stylesheet" href="viewartist.css" />
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <div class="circle"></div>
+            <span>Visualize Art</span>
+        </div>
+    
+        <!-- Hamburger menu (hidden by default) -->
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    
+        <div class="nav-and-search">
+            <nav class="nav-links">
+                <a href="home.html" class="active">Home</a>
+                <a href="home.html#about">About</a>
+                <a href="exhibitions.html">Exhibitions</a>
+                <a href="home.html#request">Request Service</a>
+            </nav>
+            <!-- <button id="logoutButton" class="logout-button">Logout</button> -->
+        </div>
+    </header>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('show');
+        }
+    </script>
+
+<section class="artist-showcase-1">
+    <h2>Artist Showcase</h2>
+    <p>Explore exquisite artworks from talented individuals</p>
+</section>
+
+
+    <div class="artist-showcase">
+        <div class="artist-info">
+            <div class="artist-photo">
+                <img src="images/artistphoto.png" alt="Artist Naufal Abshar" />
+            </div>
+            <div class="artist-details">
+                <h3>Naufal Abshar</h3>
+                <div>
+                    <span class="artist-tags">Painter</span>
+                    <span class="artist-tags">Sculptor</span>
+                </div>
+                <p>Passionate about creating art that inspires</p>
+            </div>
+            <div class="button-group">
+                <a href="https://www.instagram.com/naufalabshar?igsh=MXA4Y3RwbWt3ZXF0eQ==" target="_blank">
+                    <button class="btn follow-btn">Follow</button>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+<div class="container">
+    <h1>Featured Posters</h1>
+    <div class="poster-grid">
+        <div class="poster featured">
+            <img src="images/painting1.png" alt="Abstract Design" class="poster-image">
+            <p>Disguise & Laughter</p>
+            <div class="info">
+                <h3>2015</h3>
+                <div class="icons">
+                    <span class="icon thumbs-up">👍</span>
+                </div>
+            </div>
+        </div>
+        <div class="poster popular">
+            <img src="images/painting2.png" alt="Urban Chic" class="poster-image">
+            <p>'Hi - End' Lifestyle</p>
+            <div class="info">
+                <h3>2016</h3>
+                <div class="icons">
+                    <span class="icon thumbs-up">👍</span>
+                </div>
+            </div>
+        </div>
+        <div class="poster popular">
+            <img src="images/painting3.png" alt="Urban Chic" class="poster-image">
+            <p>A Father Figure</p>
+            <div class="info">
+                <h3>2024</h3>
+                <div class="icons">
+                    <span class="icon thumbs-up">👍</span>
+            
+                </div>
+            </div>
+        </div>
+        <div class="poster popular">
+            <img src="images/painting4.png" alt="Urban Chic" class="poster-image">
+            <p>Hide Behind Armor</p>
+            <div class="info">
+                <h3>2015</h3>
+                
+                <div class="icons">
+                    <span class="icon thumbs-up">👍</span>
+            
+                </div>
+            </div>
+        </div>
+        <div class="poster popular">
+            <img src="images/painting5.png" alt="Urban Chic" class="poster-image">
+            <p>A Small Family</p>
+            <div class="info">
+                <h3>2024</h3>
+                <div class="icons">
+                    <span class="icon thumbs-up">👍</span>
+            
+                </div>
+            </div>
+        </div>
+        <div class="poster popular">
+            <img src="images/painting6.png" alt="Urban Chic" class="poster-image">
+            <p>Hypocrisy</p>
+            <div class="info">
+                <h3>2016</h3>
+                <div class="icons">
+                    <span class="icon thumbs-up">👍</span>
+            
+                </div>
+            </div>
+        </div>
+        <div class="poster popular">
+            <img src="images/painting7.png" alt="Urban Chic" class="poster-image">
+            <p>Dame De Grande Classe</p>
+            <div class="info">
+                <h3>2017</h3>
+                <div class="icons">
+                    <span class="icon thumbs-up">👍</span>
+            
+                </div>
+            </div>
+        </div>
+        <div class="poster popular">
+            <img src="images/painting8.png" alt="Urban Chic" class="poster-image">
+            <p>I Got You!</p>
+            <div class="info">
+                <h3>2018</h3>
+                
+                <div class="icons">
+                    <span class="icon thumbs-up">👍</span>
+            
+                </div>
+            </div>
+        </div>
+        <div class="poster popular">
+            <img src="images/painting9.png" alt="Urban Chic" class="poster-image">
+            <p>The Humor Manifestation</p>
+            <div class="info">
+                <h3>2015</h3>
+                <div class="icons">
+                    <span class="icon thumbs-up">👍</span>
+            
+                </div>
+            </div>
+        </div>
+       
+</div>
+</div>
+
+
+<script src="script.js"></script>
+    </main>
+
+    <footer>
+        <p>Email: visualizeart@gmail.com</p>
+        <p>&copy; 2024 Visualize Art. All Rights Reserved.</p>
+        <a href="privacy.html">Privacy Policy</a>
+    </footer>
+</body>
+
+</html>
